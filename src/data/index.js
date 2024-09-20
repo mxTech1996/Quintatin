@@ -20,6 +20,14 @@ export const navData = [
     href: '/#references',
     label: 'References',
   },
+  {
+    href: '/#know-us',
+    label: 'Know Us',
+  },
+  {
+    href: '/more-information',
+    label: 'Contact Us',
+  },
 ];
 
 export const footerData = [
