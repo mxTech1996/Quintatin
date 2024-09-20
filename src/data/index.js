@@ -1,14 +1,11 @@
-
-export const pageName = "Quintatin";
-export const primaryColor = "#000000";
-export const backgroundColor = "#FFFFFF";
+export const pageName = 'Quintatin';
+export const primaryColor = '#C5D470FF';
+export const backgroundColor = '#D1E55FFF';
 export const makeClearBackground = (color) => {
   return {
     backgroundColor: color,
-  }
-}
-
-
+  };
+};
 
 export const navData = [
   {
