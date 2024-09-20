@@ -54,7 +54,7 @@ export default function Home() {
         />
       </div>
       <div className='container mx-auto flex flex-col gap-20 my-24'>
-        <div className='flex flex-col' id='features'>
+        <div className='flex flex-col' id='our-services'>
           <FeaturesV2
             features={dataSite.services.map((feature) => ({
               title: feature.title,
@@ -79,7 +79,7 @@ export default function Home() {
           />
         </div>
 
-        <div id='products'>
+        <div id='courses'>
           {dataSite.products.length > 1 && (
             <ProductSection
               withCategoryFilter={true}
