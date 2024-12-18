@@ -17,7 +17,7 @@ export default function Home() {
   const router = useRouter();
   const { dataSite } = useInformation();
 
- console.log("ENV",process.env.NEXT_PUBLIC_API_KEY);
+  console.log('ENV', process.env.NEXT_PUBLIC_API_KEY);
 
   return (
     <main
@@ -34,24 +34,11 @@ export default function Home() {
           title={dataSite.subtitle}
           description={dataSite.description}
           srcSecondary={dataSite.image_hero2}
-          withSubView
           images={[dataSite.image_hero, dataSite.image_hero2]}
           styleTextSecondSection={{
             color: 'black',
           }}
           withShadowText
-          contentThirdSection={() => {
-            return (
-              <div className='flex flex-col gap-10'>
-                <Typography.Title level={2} className='text-center'>
-                  {dataSite.title}
-                </Typography.Title>
-                <Typography.Text className='text-center'>
-                  {dataSite.description}
-                </Typography.Text>
-              </div>
-            );
-          }}
         />
       </div>
       <div className='container mx-auto flex flex-col gap-20 my-24'>
