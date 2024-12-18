@@ -17,7 +17,8 @@ export default function Home() {
   const router = useRouter();
   const { dataSite } = useInformation();
 
-  console.log(dataSite);
+ console.log("ENV",process.env.NEXT_PUBLIC_API_KEY);
+
   return (
     <main
       style={{
