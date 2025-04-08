@@ -1,17 +1,10 @@
 'use client';
 import { useRouter } from 'next/navigation';
-import { navData } from '@/data';
-import { NavbarV2, theme } from 'ecommerce-mxtech';
-import { useInformation } from '@/store/useInformation';
-
-const { useToken } = theme;
+import { dataSite, navData } from '@/data';
+import { NavbarV2 } from 'ecommerce-mxtech';
 
 const Navbar = () => {
-  const { dataSite } = useInformation();
   const router = useRouter();
-  const {
-    token: { colorPrimary },
-  } = useToken();
 
   return (
     <NavbarV2
